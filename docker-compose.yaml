@@ -8,8 +8,9 @@ services:
     command: python app.py
     container_name: flask-app
     ports:
-      - 5000:5000
+      - 4800:4800
   redis:
+    container_name: redis-db
     image: "redis:alpine"
     ports:
       - 6379
